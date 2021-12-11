@@ -3,8 +3,10 @@ increment = 0
 spot = 0
 gamma = 0
 epslon = 0
+L = []
 f = open("input.txt")
 for x in f:
+    L.append({x.strip(), True})
     increment += 1
     for y in x:
         if y == '1':
@@ -23,3 +25,4 @@ for z in list:
     spot += 1
 print(gamma, epslon)
 print(gamma * epslon)
+print(L)
