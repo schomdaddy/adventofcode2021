@@ -51,7 +51,6 @@ def getScore(bcard, called):
         for y in range(5):
             if bcard[x][y] != "-1":
                 ret += int(bcard[x][y])
-    print(ret, called)
     for x in range(5):
         for y in range(5):
             bcard[x][y] = "-2"
@@ -65,4 +64,4 @@ for n in call:
                 if c[x][y] == n:
                     c[x][y] = "-1"
                     if checkBingo(c):
-                        print(getScore(c,n))
+                        print(getScore(c, n))
