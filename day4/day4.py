@@ -4,7 +4,6 @@ f = open("input.txt")
 line = f.readline().strip()
 f.readline()
 call = line.split(",")
-print(call)
 cards = []
 card = []
 for x in f:
