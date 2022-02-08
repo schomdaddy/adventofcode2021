@@ -1,4 +1,4 @@
-#Linear Algebra! 
+#Linear Algebra!
 
 from z3 import *
 
@@ -43,7 +43,7 @@ minds = []
 smallest = True
 while len(minds) < 14:
     n = solve(minds, smallest=smallest)
-    print(n, "Hi")
+    print(n)
     minds.append(int(str(n)[len(minds)]))
     while n is not None:
         if smallest:
